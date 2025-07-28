@@ -9,21 +9,21 @@ const HomePage = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section 
-        className="relative min-h-screen flex items-center justify-center bg-gradient-hero bg-cover bg-center bg-blend-overlay"
+        className="relative min-h-screen flex items-center justify-center bg-gradient-hero bg-cover bg-center bg-blend-overlay pt-24"
         style={{
-          backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.8), rgba(16, 185, 129, 0.6)), url(${heroBackground})`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.65), rgba(59, 130, 246, 0.4)), url(${heroBackground})`
         }}
       >
-        <div className="container mx-auto px-4 text-center text-white">
+        <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
               Start X
-              <span className="block text-4xl md:text-5xl font-normal mt-2 text-white/90">
+              <span className="block text-4xl md:text-5xl font-normal mt-2 text-gray-100">
                 The Founder Field Manual
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto drop-shadow-md">
               30 days in Costa Rica. Build your MVP. Launch your startup. 
               Earn your first $1 of revenue. Leave with a system that scales.
             </p>
