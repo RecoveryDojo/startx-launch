@@ -218,24 +218,120 @@ const HomePage = () => {
               </Button>
             </div>
             
-            <div className="bg-gradient-card rounded-2xl p-8 shadow-tropical">
-              <h3 className="text-2xl font-bold mb-6">What's Included</h3>
-              <ul className="space-y-4">
-                {[
-                  "Shared accommodation at premium hotel",
-                  "All meals and premium coffee",
-                  "High-speed internet and co-working space",
-                  "Daily mentor sessions and workshops",
-                  "Access to the Start X app and curriculum",
-                  "Demo day and investor introductions",
-                  "Lifetime alumni network access"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center space-x-3">
-                    <div className="h-2 w-2 bg-primary rounded-full" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+            <div className="bg-gradient-card rounded-2xl p-8 shadow-tropical border border-primary/10">
+              <div className="text-center mb-8">
+                <h3 className="text-3xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">What's Included</h3>
+                <p className="text-muted-foreground">Everything you need to build, launch, and scale your startup</p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Left Column - Business Building */}
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-4 group hover:bg-primary/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-gradient-primary rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1">25 Hours of Expert Guidance</h4>
+                      <p className="text-sm text-muted-foreground">App developer and designer mentorship to bring your vision to life</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4 group hover:bg-primary/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-gradient-primary rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1">From Idea to Revenue</h4>
+                      <p className="text-sm text-muted-foreground">Learn to take an idea from nothing to a fully working business that's making money</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4 group hover:bg-primary/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-gradient-primary rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1">Premium Accommodation</h4>
+                      <p className="text-sm text-muted-foreground">Shared accommodation at premium hotel with co-working spaces</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4 group hover:bg-primary/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-gradient-primary rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1">All Meals & Premium Coffee</h4>
+                      <p className="text-sm text-muted-foreground">Fuel your creativity with delicious Costa Rican cuisine</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4 group hover:bg-primary/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-gradient-primary rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1">High-Speed Internet & Tech Setup</h4>
+                      <p className="text-sm text-muted-foreground">Everything you need to build without technical distractions</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4 group hover:bg-primary/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-gradient-primary rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1">Demo Day & Investor Network</h4>
+                      <p className="text-sm text-muted-foreground">Present your MVP and connect with potential investors</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Column - Costa Rica Experience */}
+                <div className="space-y-4">
+                  <div className="bg-gradient-tropical rounded-lg p-4 text-white mb-4">
+                    <h4 className="font-bold mb-2 text-center">🌊 Costa Rica Experience</h4>
+                    <p className="text-sm text-center text-white/90">To keep you creative and energized, we take you all over gorgeous Costa Rica</p>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4 group hover:bg-accent/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-gradient-tropical rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-accent mb-1">🏄‍♂️ Daily Beach Outings</h4>
+                      <p className="text-sm text-muted-foreground">Morning beach walks and sunset sessions to clear your mind</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4 group hover:bg-accent/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-gradient-tropical rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-accent mb-1">🌊 Professional Surf Lessons</h4>
+                      <p className="text-sm text-muted-foreground">Learn to surf with certified instructors on world-class beaches</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4 group hover:bg-accent/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-gradient-tropical rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-accent mb-1">🌿 2x Weekly Adventure Tours</h4>
+                      <p className="text-sm text-muted-foreground">Explore volcanoes, rainforests, and wildlife to spark creativity</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4 group hover:bg-success/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-success rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-success mb-1">📱 Start X App Access</h4>
+                      <p className="text-sm text-muted-foreground">Complete curriculum and task tracking system</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4 group hover:bg-success/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-success rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-success mb-1">🤝 Lifetime Alumni Network</h4>
+                      <p className="text-sm text-muted-foreground">Join a global community of successful founder alumni</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4 group hover:bg-success/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-success rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-success mb-1">🎯 Daily Mentor Sessions</h4>
+                      <p className="text-sm text-muted-foreground">1-on-1 guidance from experienced entrepreneurs and investors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
