@@ -47,15 +47,15 @@ const HomePage = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-3xl font-bold">30</div>
+                <div className="text-3xl font-bold text-white">30</div>
                 <div className="text-white/80">Days to Launch</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-3xl font-bold">$1</div>
+                <div className="text-3xl font-bold text-white">$1</div>
                 <div className="text-white/80">First Revenue Goal</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-3xl font-bold">100%</div>
+                <div className="text-3xl font-bold text-white">100%</div>
                 <div className="text-white/80">Hands-On Building</div>
               </div>
             </div>
