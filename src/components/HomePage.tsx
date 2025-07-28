@@ -230,8 +230,16 @@ const HomePage = () => {
                   <div className="flex items-start space-x-4 group hover:bg-primary/5 p-3 rounded-lg transition-all duration-300">
                     <div className="h-3 w-3 bg-gradient-primary rounded-full mt-2 group-hover:animate-pulse" />
                     <div>
-                      <h4 className="font-semibold text-primary mb-1">25 Hours of Expert Guidance</h4>
-                      <p className="text-sm text-muted-foreground">App developer and designer mentorship to bring your vision to life</p>
+                      <h4 className="font-semibold text-primary mb-1">Expert Guidance & Education</h4>
+                      <p className="text-sm text-muted-foreground">Daily mentorship and workshops from experienced entrepreneurs and investors</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4 group hover:bg-primary/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="h-3 w-3 bg-gradient-primary rounded-full mt-2 group-hover:animate-pulse" />
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1">25 Hours of Development Build-Time</h4>
+                      <p className="text-sm text-muted-foreground">Our developers will build your MVP for you (or teach you if you want to learn)</p>
                     </div>
                   </div>
                   
