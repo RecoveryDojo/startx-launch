@@ -242,24 +242,26 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-tropical">
+      <section className="py-20 bg-gradient-tropical relative">
         <div className="container mx-auto px-4 text-center">
-          <div className="max-w-3xl mx-auto text-white">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Build Your Startup?</h2>
-            <p className="text-xl mb-8 text-white/90">
-              Join the next cohort of founders who are serious about building, not just talking. 
-              Applications close soon.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90">
-                Apply Now - $2,997
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Ready to Build Your Startup?</h2>
+              <p className="text-xl mb-8 text-gray-200">
+                Join the next cohort of founders who are serious about building, not just talking. 
+                Applications close soon.
+              </p>
               
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white/30 text-white hover:bg-white/10">
-                Schedule Info Call
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button variant="hero" size="lg" className="text-lg px-8 py-6 bg-white text-primary hover:bg-white/90 shadow-lg">
+                  Apply Now - $2,997
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+                
+                <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white border-2 text-white hover:bg-white/20 bg-white/10">
+                  Schedule Info Call
+                </Button>
+              </div>
             </div>
           </div>
         </div>
