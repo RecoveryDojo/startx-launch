@@ -9,38 +9,40 @@ const HomePage = () => {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section 
-        className="relative min-h-screen flex items-center justify-center bg-gradient-hero bg-cover bg-center bg-blend-overlay pt-24"
+        className="relative min-h-screen flex items-center justify-center bg-cover bg-center pt-24"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.65), rgba(59, 130, 246, 0.4)), url(${heroBackground})`
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(${heroBackground})`
         }}
       >
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
-              Start X
-              <span className="block text-4xl md:text-5xl font-normal mt-2 text-gray-100">
-                The Founder Field Manual
-              </span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto drop-shadow-md">
-              30 days in Costa Rica. Build your MVP. Launch your startup. 
-              Earn your first $1 of revenue. Leave with a system that scales.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6" asChild>
-                <a href="/onboarding">
-                  Start Your Journey
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
+            <div className="bg-black/20 backdrop-blur-sm rounded-2xl p-8 mb-8">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
+                Start X
+                <span className="block text-4xl md:text-5xl font-normal mt-2 text-gray-200">
+                  The Founder Field Manual
+                </span>
+              </h1>
               
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-white/10 border-white/30 text-white hover:bg-white/20" asChild>
-                <a href="/dashboard">
-                  View Demo Dashboard
-                </a>
-              </Button>
+              <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
+                30 days in Costa Rica. Build your MVP. Launch your startup. 
+                Earn your first $1 of revenue. Leave with a system that scales.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button variant="hero" size="lg" className="text-lg px-8 py-6" asChild>
+                  <a href="/onboarding">
+                    Start Your Journey
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
+                </Button>
+                
+                <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-white/10 border-white/30 text-white hover:bg-white/20" asChild>
+                  <a href="/dashboard">
+                    View Demo Dashboard
+                  </a>
+                </Button>
+              </div>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
