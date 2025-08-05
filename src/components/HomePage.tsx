@@ -366,6 +366,8 @@ const HomePage = () => {
                   Schedule Info Call
                 </Button>
               </div>
+              
+              <p className="text-sm text-white/70 mt-4">** Scholarships Available **</p>
             </div>
           </div>
         </div>
