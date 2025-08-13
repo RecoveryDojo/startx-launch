@@ -367,6 +367,19 @@ const HomePage = () => {
                 </Button>
               </div>
               
+              <div className="mt-6 pt-6 border-t border-white/20">
+                <p className="text-white/80 mb-4">Already enrolled? Access your learning dashboard:</p>
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="text-lg px-8 py-4 border-white/50 text-white hover:bg-white/10"
+                  onClick={() => window.location.href = '/dashboard'}
+                >
+                  View 30-Day Curriculum Dashboard
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </div>
+              
               <p className="text-sm text-white/70 mt-4">** Scholarships Available **</p>
             </div>
           </div>
