@@ -30,7 +30,9 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import InteractiveCanvas from './InteractiveCanvas';
 import WorksheetBuilder from './WorksheetBuilder';
-import { dailyCurriculum, getCurrentDay, getDayProgress, phaseColors } from '@/data/curriculum';
+import { dailyCurriculum, getCurrentDay, getDayProgress, phaseColors, getWeekProgress, getPhaseProgress, weeklyMilestones } from '@/data/comprehensive-curriculum';
+import EnhancedWorksheetBuilder from '@/components/enhanced/WorksheetBuilder';
+import { worksheetDefinitions } from '@/data/worksheets';
 
 const AppDashboard = () => {
   const [currentDay] = useState(getCurrentDay());
