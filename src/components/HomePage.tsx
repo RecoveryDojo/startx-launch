@@ -378,6 +378,18 @@ const HomePage = () => {
                   View 30-Day Curriculum Dashboard
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
+                
+                <div className="mt-4">
+                  <p className="text-white/60 text-sm mb-2">Need to transfer this project?</p>
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="text-sm px-4 py-2 border-white/30 text-white/80 hover:bg-white/5"
+                    onClick={() => window.location.href = '/transfer'}
+                  >
+                    Transfer Helper Tool
+                  </Button>
+                </div>
               </div>
               
               <p className="text-sm text-white/70 mt-4">** Scholarships Available **</p>
